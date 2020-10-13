@@ -1,0 +1,215 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+.header{
+  height: 52px;
+  border-bottom: 1px rgba(128, 128, 128, 0.452) solid;
+}
+
+.header-content{
+  height: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 293px));
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+.loguin{
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.loguin button{
+  background: #0095f6;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  height: 30px;
+  padding: 0 9px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.loguin a{
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: #0095f6;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.header-input{
+  padding: 0 40px; 
+}
+
+.header-input .input{
+  height: 25px;
+  border-radius: 3px;
+  border: 1px rgba(128, 128, 128, 0.356) solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  color:  rgba(128, 128, 128, 0.589);
+  background: rgba(128, 128, 128, 0.041);; 
+}
+
+.search{
+  color: rgba(128, 128, 128, 0.589);
+  padding: 0 5px;
+  font-size: 14px;
+}
+
+.header img {
+  max-width: 100px;
+}
+
+.info{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 293px));
+  gap: 28px;
+  justify-content: center;
+}
+
+.perfil-img { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 29px;
+}
+
+.perfil-img img{
+  width: 149px;
+  height: 149px;
+  border-radius: 100px;
+}
+
+.perfil-detail{
+  grid-column: 2/-1;
+}
+
+.perfil-detail-title{
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.perfil-detail-title .h2{
+  padding-right: 20px;
+  font-size: 28px;
+  font-weight: 100;
+  color: rgba(128, 128, 128, 0.603);
+}
+
+.perfil-follow{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  width: 60%;
+}
+
+.perfil-follow a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.788);
+  font-size: 14px;
+}
+
+.description p{
+  margin: 0;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.historias{
+  grid-column: 1/-1;
+}
+
+.historias-img{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+  border-bottom: 1px gray solid;
+}
+
+.historias-img img{
+  width: 80px;
+  height: 80px;
+  border-radius: 100px; 
+  object-fit: cover;
+}
+
+.post-list{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 293px));
+  justify-content: center;
+  gap: 28px;
+}
+
+.post{
+  cursor: pointer; /* sale la manito cuando se pone el cursor dentro del post */
+  position: relative;
+  display: block;
+}
+
+.post-image{
+  margin: 0;
+}
+
+.post-image img{
+  width: 100%;
+  vertical-align: top;
+}
+
+.post-overlay{
+  background: rgba(0,0, 0, .4);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.post:hover .post-overlay{
+  display: flex;
+}
+
+.post-likes, .post-coments{
+  width: 80px;
+  margin: 5px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+
+@media screen and (max-width: 768px){
+  .post-list{
+    gap: 3px;
+  }
+  .header-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img-h loguin";
+                       
+  }
+  }
+
+  
+
+
+  
